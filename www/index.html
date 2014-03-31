@@ -17,13 +17,15 @@
     </head>
     <body>
         <div data-role="page" id="mainpage">
-            <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner">
+            <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner" data-position="fixed">
                 <a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon" data-role="button" role="button"> Home </a>
-                <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">NHL Today</h1>
+                <div class="ui-title" tabindex="0" role="heading" aria-level="1">
+                    <img id="header-image"  src="img/nhl_small.gif" />
+                    <h1 id="header-title">NHL Today</h1>
+                </div>
                 <a class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon" data-role="button" role="button"> Navigation </a>
             </div>
             <div data-role="main" class="ui-content">
-                <h1>Tuesday 25.3.2014</h1>
                 <div id="games" class="">
                 </div>
             </div>

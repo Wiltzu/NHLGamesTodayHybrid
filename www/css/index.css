@@ -41,7 +41,6 @@ body {
     height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
@@ -67,19 +66,32 @@ body {
     padding-top: 3px;
 }
 
+#header-image {
+    display: inline;
+    position: relative;
+    right: 3px;
+    height: 25px;
+    width: 25px;
+}
+#header-title {
+    display: inline;
+}
+
 .game {
     min-height: 25px;
     padding: 5px;
-}
-
-.time {
-    margin-right: 3px;
 }
 
 .game > .home, .away, .vs, .time {
     position: relative;
     bottom: 8px;
     font-size: 9px;
+}
+
+.time {
+    margin-right: 3px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .game > .home, .away {
@@ -96,7 +108,7 @@ body {
 }
 
 h1 {
-    font-size:24px;
+    font-size:20px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
