@@ -28,6 +28,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('DOMContentLoaded', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
@@ -66,10 +67,18 @@ function hideAjaxWaitingIcon () {
 
 var displayTodaysGames = function (todaysGames) {
     console.log("displaying todays games")
-    games = $("#games");
-    games.append('<div class="game">');
-    games.append(todaysGames.message)
-    games.append('</div>');
+    $games = $("#games");
+    games = todaysGames.query.results.league['daily-schedule'].games.game;
+    
+    for (var i = 0; i < games.length; i++) {
+        $game = $('<div class="game"></div>');
+        $games.append($game);
+        
+        game = games[i];
+        $game.append('<span class="home">' + game.home.name + '</span>');
+        $game.append('<span class="vs">-</span>');
+        $game.append('<span class="away">' + game.away.name + '</span>');
+    };
     hideAjaxWaitingIcon();
 };
 
@@ -77,12 +86,12 @@ var getGamesInBackground = function () {
     //navigator.notification.alert("Hello alert!");
     console.log('fetching games in background');
     $.ajax({
-        url: "http://192.168.11.2/test",
+        url: "http://192.168.11.2/nhlsport",
         dataType: 'jsonp',
         jsonp: "callback",
         crossDomain: true,
         success: function(result) { console.log(result); displayTodaysGames(result); },
-        error: function(xhr, status, error) { console.log(status + ' ' + error); }
+        error: function(xhr, status, error) { console.log(status + ' ' + error); hideAjaxWaitingIcon();}
     });
 };
 

@@ -9,12 +9,20 @@ app.get('/nhlsport', function (req, res) {
 	filepath = 'test.json';
 
 	fs.readFile(filepath, 'utf8', function (err, data) {
+		res.type("text/javascript;charset=utf-8");
+	    callback = req.query.callback
+
 		if(err) {
 			doInError(err, res);
 			return;
 		}
+
+		if (callback) {
+			res.send(callback + '(' + data + ')');
+		} else {
 			res.type('application/json');
 			res.send(data);		
+		}
 	});
 
 	console.log('Client queried for: ' + JSON.stringify(req.query));
