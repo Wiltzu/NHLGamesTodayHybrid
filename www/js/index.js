@@ -77,6 +77,7 @@ var displayTodaysGames = function (todaysGames) {
         game = games[i];
         var homeTeam = game.home.name;
         var awayTeam = game.away.name;
+        $game.append('<span class="time">'+ new Date(Date.parse(game.scheduled)).timeNow() +'</span>');
         $game.append('<img src="' + images.getTeamImage(homeTeam) +'"/>');
         $game.append('<span class="home">' + homeTeam + '</span>');
         $game.append('<span class="vs">-</span>');
@@ -132,4 +133,9 @@ String.prototype.format = function () {
     return this.replace(/{(\d+)}/g, function(match, number) { 
       return typeof args[number] != 'undefined' ? args[number] : match;
     });
+};
+
+// For the time now
+Date.prototype.timeNow = function () {
+     return ((this.getHours() < 10)?"0":"") + this.getHours() +":"+ ((this.getMinutes() < 10)?"0":"") + this.getMinutes();
 };
