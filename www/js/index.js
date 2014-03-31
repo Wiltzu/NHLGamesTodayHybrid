@@ -75,9 +75,13 @@ var displayTodaysGames = function (todaysGames) {
         $games.append($game);
         
         game = games[i];
-        $game.append('<span class="home">' + game.home.name + '</span>');
+        var homeTeam = game.home.name;
+        var awayTeam = game.away.name;
+        $game.append('<img src="' + images.getTeamImage(homeTeam) +'"/>');
+        $game.append('<span class="home">' + homeTeam + '</span>');
         $game.append('<span class="vs">-</span>');
-        $game.append('<span class="away">' + game.away.name + '</span>');
+        $game.append('<img src="' + images.getTeamImage(awayTeam) +'"/>');
+        $game.append('<span class="away">' + awayTeam + '</span>');
     };
     hideAjaxWaitingIcon();
 };
