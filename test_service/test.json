@@ -1,0 +1,355 @@
+{
+ "query": {
+  "count": 1,
+  "created": "2014-03-25T07:07:19Z",
+  "lang": "en-US",
+  "diagnostics": {
+   "publiclyCallable": "true",
+   "url": {
+    "execution-start-time": "1",
+    "execution-stop-time": "1106",
+    "execution-time": "1105",
+    "content": "https://api.sportsdatallc.org/nhl-t3/games/2014/3/25/schedule.xml?api_key=2r59m5ane43tsshqj9kcgcvq"
+   },
+   "user-time": "1107",
+   "service-time": "1105",
+   "build-version": "0.2.2305"
+  },
+  "results": {
+   "league": {
+    "alias": "NHL",
+    "id": "fd560107-a85b-4388-ab0d-655ad022aff7",
+    "name": "NHL",
+    "xmlns": "http://feed.elasticstats.com/schema/hockey/schedule-v2.0.xsd",
+    "daily-schedule": {
+     "date": "2014-03-25",
+     "games": {
+      "game": [
+       {
+        "away_team": "44151f7a-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "4417eede-0f24-11e2-8525-18a905767e44",
+        "id": "2c5e2441-432f-4f76-b395-da7286b3177b",
+        "scheduled": "2014-03-25T23:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "601 F St. N.W.",
+         "capacity": "18506",
+         "city": "Washington",
+         "country": "USA",
+         "id": "48f092ed-ce49-4a08-97c6-def284ba6721",
+         "name": "Verizon Center",
+         "state": "DC",
+         "zip": "20004"
+        },
+        "home": {
+         "alias": "WSH",
+         "id": "4417eede-0f24-11e2-8525-18a905767e44",
+         "name": "Washington Capitals"
+        },
+        "away": {
+         "alias": "LA",
+         "id": "44151f7a-0f24-11e2-8525-18a905767e44",
+         "name": "Los Angeles Kings"
+        },
+        "broadcast": {
+         "network": "CSN-DC",
+         "satellite": "642"
+        }
+       },
+       {
+        "away_team": "441660ea-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "441730a9-0f24-11e2-8525-18a905767e44",
+        "id": "4f270374-6be5-49c9-8cb8-6762d63024b5",
+        "scheduled": "2014-03-25T23:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "40 Bay St.",
+         "capacity": "18819",
+         "city": "Toronto",
+         "country": "CANADA",
+         "id": "a84c7004-18b2-4c5d-a036-f0c368c08bc5",
+         "name": "Air Canada Centre",
+         "state": "ON",
+         "zip": "M5J 2X2"
+        },
+        "home": {
+         "alias": "TOR",
+         "id": "441730a9-0f24-11e2-8525-18a905767e44",
+         "name": "Toronto Maple Leafs"
+        },
+        "away": {
+         "alias": "STL",
+         "id": "441660ea-0f24-11e2-8525-18a905767e44",
+         "name": "St. Louis Blues"
+        },
+        "broadcast": {
+         "network": "FS-MW",
+         "satellite": "671"
+        }
+       },
+       {
+        "away_team": "441766b9-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "44182a9d-0f24-11e2-8525-18a905767e44",
+        "id": "5c336f77-a733-49b9-a5ad-ed958abcb609",
+        "scheduled": "2014-03-25T23:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "1400 Edwards Mill Road",
+         "capacity": "18680",
+         "city": "Raleigh",
+         "country": "USA",
+         "id": "1ea58cb6-6a28-4619-b010-747ecbc30aa7",
+         "name": "PNC Arena",
+         "state": "NC",
+         "zip": "27607"
+        },
+        "home": {
+         "alias": "CAR",
+         "id": "44182a9d-0f24-11e2-8525-18a905767e44",
+         "name": "Carolina Hurricanes"
+        },
+        "away": {
+         "alias": "NYI",
+         "id": "441766b9-0f24-11e2-8525-18a905767e44",
+         "name": "New York Islanders"
+        },
+        "broadcast": {
+         "network": "FS-CR",
+         "satellite": "645"
+        }
+       },
+       {
+        "away_team": "44153da1-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "4417b7d7-0f24-11e2-8525-18a905767e44",
+        "id": "deb81b07-91f6-4ee9-bd17-a82efa648a65",
+        "scheduled": "2014-03-25T23:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "1001 Fifth Ave.",
+         "capacity": "18387",
+         "city": "Pittsburgh",
+         "country": "USA",
+         "id": "09cab1a6-16ee-4ed9-aefa-c6cc24681b3b",
+         "name": "Consol Energy Center",
+         "state": "PA",
+         "zip": "15219"
+        },
+        "home": {
+         "alias": "PIT",
+         "id": "4417b7d7-0f24-11e2-8525-18a905767e44",
+         "name": "Pittsburgh Penguins"
+        },
+        "away": {
+         "alias": "PHX",
+         "id": "44153da1-0f24-11e2-8525-18a905767e44",
+         "name": "Phoenix Coyotes"
+        },
+        "broadcast": {
+         "network": "ROOT",
+         "satellite": "659"
+        }
+       },
+       {
+        "away_team": "4416d559-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "441713b7-0f24-11e2-8525-18a905767e44",
+        "id": "0d9a320f-413b-49ed-8ffe-77010317652e",
+        "scheduled": "2014-03-25T23:30:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "1909 Avenue des Canadiens-de-Montreal",
+         "capacity": "21273",
+         "city": "Montreal",
+         "country": "USA",
+         "id": "2ee8c0bf-dfd1-480c-80df-4d5f66a9dc76",
+         "name": "Bell Centre",
+         "state": "QC",
+         "zip": "H3B 5E8"
+        },
+        "home": {
+         "alias": "MTL",
+         "id": "441713b7-0f24-11e2-8525-18a905767e44",
+         "name": "Montreal Canadiens"
+        },
+        "away": {
+         "alias": "BUF",
+         "id": "4416d559-0f24-11e2-8525-18a905767e44",
+         "name": "Buffalo Sabres"
+        },
+        "broadcast": {
+         "network": "MSG-B",
+         "satellite": "638"
+        }
+       },
+       {
+        "away_team": "4416f5e2-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "4418464d-0f24-11e2-8525-18a905767e44",
+        "id": "30d51b2f-79d4-442f-a19f-01990eded7b5",
+        "scheduled": "2014-03-25T23:30:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "One Panther Parkway",
+         "capacity": "17040",
+         "city": "Sunrise",
+         "country": "USA",
+         "id": "7cc8e88f-9196-4dbc-aa6a-d6f1a0550673",
+         "name": "BB&T Center",
+         "state": "FL",
+         "zip": "33323"
+        },
+        "home": {
+         "alias": "FLA",
+         "id": "4418464d-0f24-11e2-8525-18a905767e44",
+         "name": "Florida Panthers"
+        },
+        "away": {
+         "alias": "OTT",
+         "id": "4416f5e2-0f24-11e2-8525-18a905767e44",
+         "name": "Ottawa Senators"
+        },
+        "broadcast": {
+         "network": "FS-F",
+         "satellite": "654"
+        }
+       },
+       {
+        "away_team": "44169bb9-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "44167db4-0f24-11e2-8525-18a905767e44",
+        "id": "5120dc86-13fc-497d-b6df-d4e476de785e",
+        "scheduled": "2014-03-25T23:30:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "200 W. Nationwide Blvd.",
+         "capacity": "18144",
+         "city": "Columbus",
+         "country": "USA",
+         "id": "41a57fc9-a04b-43db-b1f8-87f34f21459b",
+         "name": "Nationwide Arena",
+         "state": "OH",
+         "zip": "43215"
+        },
+        "home": {
+         "alias": "CBJ",
+         "id": "44167db4-0f24-11e2-8525-18a905767e44",
+         "name": "Columbus Blue Jackets"
+        },
+        "away": {
+         "alias": "DET",
+         "id": "44169bb9-0f24-11e2-8525-18a905767e44",
+         "name": "Detroit Red Wings"
+        },
+        "broadcast": {
+         "network": "NBCSN",
+         "satellite": "220"
+        }
+       },
+       {
+        "away_team": "44157522-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "4416272f-0f24-11e2-8525-18a905767e44",
+        "id": "541a509e-bd83-49d3-a3f2-e7c59168b2a8",
+        "scheduled": "2014-03-26T00:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "1901 W. Madison St.",
+         "capacity": "19717",
+         "city": "Chicago",
+         "country": "USA",
+         "id": "bbdf58db-fd65-44de-90b9-fcf523c2d764",
+         "name": "United Center",
+         "state": "IL",
+         "zip": "60612"
+        },
+        "home": {
+         "alias": "CHI",
+         "id": "4416272f-0f24-11e2-8525-18a905767e44",
+         "name": "Chicago Blackhawks"
+        },
+        "away": {
+         "alias": "DAL",
+         "id": "44157522-0f24-11e2-8525-18a905767e44",
+         "name": "Dallas Stars"
+        },
+        "broadcast": {
+         "network": "CSN-CH",
+         "satellite": "665"
+        }
+       },
+       {
+        "away_team": "4415ce44-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "441643b7-0f24-11e2-8525-18a905767e44",
+        "id": "89000a7a-66fe-4b56-95f7-c5d4f498abf6",
+        "scheduled": "2014-03-26T00:00:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "501 Broadway",
+         "capacity": "17113",
+         "city": "Nashville",
+         "country": "USA",
+         "id": "cc4e7a62-fae8-4ebb-9a64-f4384385d0b6",
+         "name": "Bridgestone Arena",
+         "state": "TN",
+         "zip": "37203"
+        },
+        "home": {
+         "alias": "NSH",
+         "id": "441643b7-0f24-11e2-8525-18a905767e44",
+         "name": "Nashville Predators"
+        },
+        "away": {
+         "alias": "COL",
+         "id": "4415ce44-0f24-11e2-8525-18a905767e44",
+         "name": "Colorado Avalanche"
+        },
+        "broadcast": {
+         "network": "FS-TN",
+         "satellite": "644"
+        }
+       },
+       {
+        "away_team": "44155909-0f24-11e2-8525-18a905767e44",
+        "coverage": "full",
+        "home_team": "4415ea6c-0f24-11e2-8525-18a905767e44",
+        "id": "7510d9e1-1acd-4737-80f0-a98bbb112e6a",
+        "scheduled": "2014-03-26T01:30:00+00:00",
+        "status": "scheduled",
+        "venue": {
+         "address": "7424 118th Ave.",
+         "capacity": "16839",
+         "city": "Edmonton",
+         "country": "CANADA",
+         "id": "0e58dfd1-de2a-4140-843f-ef58a555f43f",
+         "name": "Rexall Place",
+         "state": "AB",
+         "zip": "T5B 4M9"
+        },
+        "home": {
+         "alias": "EDM",
+         "id": "4415ea6c-0f24-11e2-8525-18a905767e44",
+         "name": "Edmonton Oilers"
+        },
+        "away": {
+         "alias": "SJ",
+         "id": "44155909-0f24-11e2-8525-18a905767e44",
+         "name": "San Jose Sharks"
+        },
+        "broadcast": {
+         "network": "CSN-CA",
+         "satellite": "698"
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}
+

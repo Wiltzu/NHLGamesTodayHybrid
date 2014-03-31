@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" href="themes/projectTheme.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.2.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile-1.4.2.min.css" />
+        <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="mainpage">
+            <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner">
+                <a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon" data-role="button" role="button"> Home </a>
+                <h1 class="ui-title" tabindex="0" role="heading" aria-level="1">NHL Today</h1>
+                <a class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-form="ui-icon" data-role="button" role="button"> Navigation </a>
+            </div>
+            <div data-role="main" class="ui-content">
+                <h1>Tuesday 25.3.2014</h1>
+                <div id="games" class="">
+                    <div class="game">
+                        <img src="img/carolina_small.png"/>
+                        <span class="home">
+                            Carolina Hurricanes
+                        </span>
+                        <span class="vs">-</span>
+                        <img src="img/islanders_small.png"/>
+                        <span class="away">
+                            New York Islanders
+                        </span>
+                    </div>
+                    <div class="game">
+                        <img src="img/carolina_small.png"/>
+                        <span class="home">
+                            Carolina Hurricanes
+                        </span>
+                        <span class="vs">-</span>
+                        <img src="img/islanders_small.png"/>
+                        <span class="away">
+                            New York Islanders
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>By Ville Ahti</h1>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

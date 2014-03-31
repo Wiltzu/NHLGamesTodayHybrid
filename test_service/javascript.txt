@@ -1,0 +1,3 @@
+navigator.notification.alert(result);
+navigator.notification.alert('error: ' + status)
+"http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20'https%3A%2F%2Fapi.sportsdatallc.org%2Fnhl-t3%2Fgames%2F2014%2F3%2F25%2Fschedule.xml%3Fapi_key%3D2r59m5ane43tsshqj9kcgcvq'&format=json&diagnostics=true&callback=".format(yyyy, mm, dd)
