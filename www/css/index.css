@@ -72,7 +72,11 @@ body {
     padding: 5px;
 }
 
-.game > .home, .away, .vs {
+.time {
+    margin-right: 3px;
+}
+
+.game > .home, .away, .vs, .time {
     position: relative;
     bottom: 8px;
     font-size: 9px;
