@@ -52,12 +52,6 @@ body {
     text-align:center;
 }
 
-#games {
-    padding-top: 3px;
-    display:block;
-    border: solid 1px;
-}
-
 #header-image {
     display: inline;
     position: relative;
@@ -73,22 +67,17 @@ body {
 
 .game {
     min-height: 25px;
-    padding: 5px;
-}
-
-.game:active {
-    
 }
 
 .game > .home, .away, .vs, .time {
     position: relative;
     bottom: 8px;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .time {
     margin-right: 3px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -115,17 +104,23 @@ h1 {
 }
 
 @media all and (min-width: 640px) {
+    #header-image {
+        height: 30px;
+        width: 30px;
+    }
+
+    .game img {
+        height: 30px;
+        width: 30px;
+    }
+
     #header-title {
         bottom: 2px;
     }
 
-    #games {
-        float: center;
-       margin: auto 10% auto 10%;
-    }
-
     .time {
         margin-right: 7px;
+        font-size: 22px;
     }
 
     .game > .home, .away, .vs, .time {
@@ -146,12 +141,13 @@ h1 {
         bottom: 0px;
     }
 
-    #games {
-        margin: auto 20% auto 20%;
+    .time {
+        margin-right: 7px;
+        font-size: 28px;
     }
 
     .game > .home, .away, .vs, .time {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     h1 {

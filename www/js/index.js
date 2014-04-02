@@ -71,18 +71,27 @@ var displayTodaysGames = function (todaysGames) {
     games = todaysGames.query.results.league['daily-schedule'].games.game;
     
     for (var i = 0; i < games.length; i++) {
-        $game = $('<div class="game"></div>');
-        $games.append($game);
         
         game = games[i];
+
+        if(i === 0) {
+            today = getDate();
+            $games.append('<li data-role="list-divider">' + today.day +'.'+ today.month + '.' + today.year + '</li>');
+        };
+        
         var homeTeam = game.home.name;
         var awayTeam = game.away.name;
+
+        $game = $('<div class="game"></div>');
+        $games.append($('<li></li>').append($game));
         $game.append('<span class="time">'+ new Date(Date.parse(game.scheduled)).timeNow() +'</span>');
         $game.append('<img src="' + images.getTeamImage(homeTeam) +'"/>');
         $game.append('<span class="home">' + homeTeam + '</span>');
         $game.append('<span class="vs">-</span>');
         $game.append('<img src="' + images.getTeamImage(awayTeam) +'"/>');
         $game.append('<span class="away">' + awayTeam + '</span>');
+        //refresh listview (must be done)
+        $games.listview('refresh');
     };
     hideAjaxWaitingIcon();
 };

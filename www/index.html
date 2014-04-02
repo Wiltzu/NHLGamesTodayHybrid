@@ -16,7 +16,9 @@
         <script type="text/javascript" src="js/images.js"></script>
     </head>
     <body>
+        
         <div data-role="page" id="mainpage">
+            
             <div class="ui-header ui-bar-a" data-swatch="a" data-theme="a" data-form="ui-bar-a" data-role="header" role="banner" data-position="fixed">
                 <a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-home ui-btn-icon-notext ui-shadow" title=" Home " data-form="ui-icon" data-role="button"> Home </a>
                 <div class="ui-title" tabindex="0" role="heading" aria-level="1">
@@ -25,48 +27,11 @@
                 </div>
                 <a href="#other" class="ui-btn-right ui-btn-corner-all ui-btn ui-icon-grid ui-btn-icon-notext ui-shadow" title=" Navigation " data-transition="slide" data-role="button"> Navigation </a>
             </div>
-            <div data-role="main" class="ui-content">
-                <div id="games" class="ui-corner-all ui-shadow ui-overlay-shadow">
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed">
-                <h1>By Ville Ahti</h1>
-            </div>
-        </div>
 
-        <div data-role="page" id="other" data-theme="a">
-             <div class="ui-header ui-bar-a" data-swatch="a" data-form="ui-bar-a" data-role="header" role="banner" data-position="fixed">
-                <a class="ui-btn-left ui-btn-corner-all ui-btn ui-icon-back ui-btn-icon-notext ui-shadow" data-form="ui-icon" data-role="button" href="#mainpage">Back</a>
-                <div class="ui-title" tabindex="0" role="heading" aria-level="1">
-                    <img id="header-image"  src="img/nhl_small.gif" />
-                    <h1 id="header-title">NHL Today</h1>
-                </div>
-            </div>
             <div data-role="content">
-                <ul data-role="listview">
-                    <li>
-                        <div class="game">
-                            <span class="time">1.00</span>
-                            <img src="img/canucks_small.png">
-                            <span class="home">Vancouver Canucks</span>
-                            <span class="vs">-</span>
-                            <img src="img/predators_small.png">
-                            <span class="away">Nashville Predators</span>
-                        </div>
-                    </li>
-                    <li>Audi</li>
-                    <li>Toyota</li>
-                    <li>BMW</li>
-                    <li>Audi</li>
-                    <li>Toyota</li>
-                    <li>BMW</li>
-                    <li>Audi</li>
-                    <li>Toyota</li>
-                    <li>BMW</li>
-                    <li>Audi</li>
-                    <li>Toyota</li>
-                </ul>
+                <ul id="games" data-role="listview"></ul>
             </div>
+            
             <div data-role="footer" data-position="fixed">
                 <h1>By Ville Ahti</h1>
             </div>
@@ -76,5 +41,6 @@
         <script type="text/javascript">
             app.initialize();
         </script>
+
     </body>
 </html>
