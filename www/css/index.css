@@ -52,18 +52,10 @@ body {
     text-align:center;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
-}
-
 #games {
     padding-top: 3px;
+    display:block;
+    border: solid 1px;
 }
 
 #header-image {
@@ -82,6 +74,10 @@ body {
 .game {
     min-height: 25px;
     padding: 5px;
+}
+
+.game:active {
+    
 }
 
 .game > .home, .away, .vs, .time {
@@ -116,6 +112,51 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+}
+
+@media all and (min-width: 640px) {
+    #header-title {
+        bottom: 2px;
+    }
+
+    #games {
+        float: center;
+       margin: auto 10% auto 10%;
+    }
+
+    .time {
+        margin-right: 7px;
+    }
+
+    .game > .home, .away, .vs, .time {
+        font-size: 18px;
+    }
+
+    .game > .home, .away {
+        padding-left: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    #header-title {
+        bottom: 0px;
+    }
+
+    #games {
+        margin: auto 20% auto 20%;
+    }
+
+    .game > .home, .away, .vs, .time {
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
 }
 
 .event {
